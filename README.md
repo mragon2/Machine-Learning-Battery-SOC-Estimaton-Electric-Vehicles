@@ -2,5 +2,5 @@
 
 State-of-Charge estimation using ML
 
-!['./TOC.tif']
+![plot]('./TOC.tif')
 
