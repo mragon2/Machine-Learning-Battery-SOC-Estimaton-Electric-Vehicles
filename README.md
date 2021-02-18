@@ -5,7 +5,7 @@ This repository contains the codes to implement a data driven framework to predi
 
 If you are intended to use our code, please cite:
 
-***Ragone M.****,Yurkiv V.,Ramasubramanian A.,Kashir B.,Mashayek F.,Datadrivenestimationofelectricvehiclebatterystate-of-charge informed by automotive simulations and multi-physics modeling, Journal of Power Sources, 483 (2021) 229108
+****Ragone M.****,Yurkiv V.,Ramasubramanian A.,Kashir B.,Mashayek F.,Datadrivenestimationofelectricvehiclebatterystate-of-charge informed by automotive simulations and multi-physics modeling, Journal of Power Sources, 483 (2021) 229108
 
 
 ![plot](./TOC.png)
