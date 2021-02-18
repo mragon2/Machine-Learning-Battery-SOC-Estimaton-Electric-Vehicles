@@ -2,3 +2,5 @@
 
 State-of-Charge estimation using ML
 
+!['./TOC.tif']
+
