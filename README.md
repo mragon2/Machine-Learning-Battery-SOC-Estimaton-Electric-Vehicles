@@ -111,3 +111,12 @@ save_results_NissanLeaf.m
 for Nissan Leaf.
 
 The datasets saved in the csv files will be used for **Machine Learning** calculations, while the current saved in the txt file will be used for 3D battery simulation in **COMSOL Multiphysics**.
+
+### 2.6 Saving the results
+
+Finally, if you run the script *plot_results.m* you can plot the time series of the battery SOC, voltage (cell/battery pack) and current (cell/battery pacj). Please run:
+
+```yaml
+plot_results.m
+```
+
