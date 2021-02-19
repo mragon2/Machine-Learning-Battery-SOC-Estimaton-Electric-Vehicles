@@ -27,5 +27,7 @@ Install Python 3.7 in Anaconda
 
 https://www.anaconda.com/
 
-##
+### Required Python packages
+
+### Pandas
 
