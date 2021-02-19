@@ -97,3 +97,17 @@ The number of repetitions is set by the parameter **n_repeat**. It should be not
 The EV Simulink model is implemented in the file *EV_model.slx*. You just need to open it by clicking on it and then press the green button in the upper taksbar. During the simulation you can open the scopes to visualize the time series variations of different variables such as the SOC, the voltage, the current, the electric motor power etc.
 
 ### 2.5 Saving the results
+The scripts *save_results_TeslaS.m* and *save_results_NissanLeaf.m* save the time series of the electro-mechanical variables for TeslaS and Nissan Leaf in a single dataset, one for the variables in form of power variation and one in form of energy variation. The discharging current is also saved separately. The datasets are saved in csv files, located in the folders **results_TeslaS** and **results_NissanLeaf** created by the script. Please run:
+
+```yaml
+save_results_TeslaS.m
+```
+for TeslaS, and: 
+
+```yaml
+save_results_NissanLeaf.m
+```
+
+for Nissan Leaf.
+
+The datasets saved in the csv files will be used for **Machine Learning** calculations, while the current saved in the txt file will be used for 3D battery simulation in **COMSOL Multiphysics**.
