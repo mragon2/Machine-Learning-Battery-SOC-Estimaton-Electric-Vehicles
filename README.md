@@ -46,3 +46,10 @@ conda install -c conda-forge scikit-learn
 pip3 install tensorflow==2.2.0
 ```
 
+## 2. Matlab codes-Electric Vehicle Simulation
+
+Matlab and Simulink are used to perform Electric Vehicle simulation. The dynamic EV model is built in Simulink usig the Power Train Blockset modules, which allows to simulate the component of the vehicles such as the battery pack, the electric motor, the differential etc. through appropriate blocks parametrized using lookup tables. In order to create the lookup tables needed by the Simulink EV model we need to run Matlab scripts. The scripts are implemented for two EV, TeslaS and Nissan Leaf. 
+
+One of the main difference between these two vehicles is the battery pack. TeslaS has a battery pack of 8256 18650 cylindrical cells, managed in a 96s86p series/paralle connection. A single cell is characterized by a C-NMC chemistry (anode material: Carbon,  cathode material: Nickel-Manganese-Cobalt) and it has a nominal capacity of 2.86 Ah and a nominal voltage of 4.2 V, resulting in a total capacity of 246 Ah and total energy of 100 kWh. This type of battery allows TeslaS to achieve a driving range of ~ 600 km before recharging the battery.
+1) Parametr
+
