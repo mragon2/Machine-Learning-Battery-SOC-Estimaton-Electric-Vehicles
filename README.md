@@ -81,4 +81,11 @@ for Nissan Leaf.
 
 ### 2.3 Driving Cycle
 
-The input to the EV model is a driving cycle, which an applied speed profile over time. Practically speaking, we are forcing our EV to drive with our applied speed profile defined by the driving cycle. A driving cycle is available from public agencies such as the Environmental Protection Agency (EPS), which perform tests to evaluate for example the emissions of vehicles in different conditions (urban, extra-urba, highway, high speed, low speed  etc.). Please refer to the driving cycles EPA webpage: https://www.epa.gov/vehicle-and-fuel-emissions-testing/dynamometer-drive-schedules
+The input to the EV model is a driving cycle, which an applied speed profile over time. Practically speaking, we are forcing our EV to drive with our applied speed profile defined by the driving cycle. A driving cycle is available from public agencies such as the **Environmental Protection Agency (EPA)**, which perform tests to evaluate for example the emissions of vehicles in different conditions (urban, extra-urba, highway, high speed, low speed  etc.). Please refer to the driving cycles EPA webpage: https://www.epa.gov/vehicle-and-fuel-emissions-testing/dynamometer-drive-schedules.
+
+The folder **driving_cycles** contain subfolders corresponding to driving cycles from different sources. The driving cycles are saved in txt files. In the provided example, the EPA FTP75 is considered. To define the driving cycle, please run:
+
+```yaml
+driving_cycle.m
+```
+
