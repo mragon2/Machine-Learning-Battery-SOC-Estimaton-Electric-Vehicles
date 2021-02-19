@@ -17,17 +17,32 @@ If you are intended to use our code, please cite:
 # How to use it
 ## 1. Installation
 
-### Matlab Installation
+**Matlab Installation**
+
 Install MATLAB & Simulink version 2019 or above
 
 https://www.mathworks.com/products/matlab.html
 
-### Python Installtion
+**Python Installtion**
+
 Install Python 3.7 in Anaconda 
 
 https://www.anaconda.com/
 
-### Required Python packages
+**Required Python packages**
 
-### Pandas
+**Pandas**:
+```yaml
+conda install -c anaconda pandas
+```
+**Scikit-Learn**:
+
+```yaml
+conda install -c conda-forge scikit-learn 
+```
+
+**Tensorflow 2.2.0**:
+```yaml
+pip3 install tensorflow==2.2.0
+```
 
