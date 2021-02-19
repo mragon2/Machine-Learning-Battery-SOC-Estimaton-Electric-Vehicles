@@ -7,6 +7,8 @@ If you are intended to use our code, please cite:
 
 ***Ragone M.***,*Yurkiv V.,Ramasubramanian A.,Kashir B.,Mashayek F.,Datadrivenestimationofelectricvehiclebatterystate-of-charge informed by automotive simulations and multi-physics modeling, Journal of Power Sources, 483 (2021) 229108*
 
+We have been also invited to present the project at the *PRiME 2020 ECS Meeting* in the symposium *F03:  Modeling Electrochemical Systems for Transportation Applications*
+
 
 ![plot](./TOC.png)
 
