@@ -16,7 +16,16 @@ If you are intended to use our code, please cite:
 
 # How to use it
 ## 1. Installation
-Install MATLAB 2019 or above
+
+### Matlab Installation
+Install MATLAB & Simulink version 2019 or above
 
 https://www.mathworks.com/products/matlab.html
+
+### Python Installtion
+Install Python 3.7 in Anaconda 
+
+https://www.anaconda.com/
+
+##
 
