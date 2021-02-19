@@ -71,8 +71,14 @@ Not only the battery pack needs to be parametrized, but all the other modules wh
 ```yaml
 TeslaS_input_data.m
 ```
-for TeslaS, and 
+for TeslaS, and: 
 
 ```yaml
 NissanLeaf_input_data.m
 ```
+
+for Nissan Leaf.
+
+### 2.3 Driving Cycle
+
+The input to the EV model is a driving cycle, which an applied speed profile over time. Practically speaking, we are forcing our EV to drive with our applied speed profile defined by the driving cycle. A driving cycle is available from public agencies such as the Environmental Protection Agency (EPS), which perform tests to evaluate for example the emissions of vehicles in different conditions (urban, extra-urba, highway, high speed, low speed  etc.). Please refer to the driving cycles EPA webpage: https://www.epa.gov/vehicle-and-fuel-emissions-testing/dynamometer-drive-schedules
