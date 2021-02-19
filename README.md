@@ -14,3 +14,5 @@ If you are intended to use our code, please cite:
 ![plot](./TOC.png)
 
 
+# How to use it
+
