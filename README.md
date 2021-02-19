@@ -48,7 +48,7 @@ pip3 install tensorflow==2.2.0
 
 ## 2. Matlab codes-Electric Vehicle Simulation
 
-Matlab and Simulink are used to perform Electric Vehicle simulation. The dynamic EV model is built in Simulink usig the Power Train Blockset modules, which allows to simulate the component of the vehicles such as the battery pack, the electric motor, the differential etc. through appropriate blocks parametrized using lookup tables. In order to create the lookup tables needed by the Simulink EV model we need to run Matlab scripts. The scripts are implemented for two EV, TeslaS and Nissan Leaf. 
+Matlab and Simulink are used to perform Electric Vehicle simulation. The dynamic EV model is built in Simulink usig the Power Train Blockset modules, which allows to simulate the component of the vehicles such as the battery pack, the electric motor, the differential etc. through appropriate blocks parametrized using lookup tables. In order to create the lookup tables needed by the Simulink EV model we need to run Matlab scripts. The scripts are implemented for two EV, TeslaS and Nissan Leaf. The EV simulations are necessary to simulated the time series of the electro-mechanical variables used to train and test Machine Learning models to predict the State-Of-Charfe in electric vehicles applications.
 
 ### 2.1 Battery Parametrization
 One of the main difference between these two vehicles is the battery pack. **TeslaS** has a battery pack of **8256 cylindrical cells**, managed in a **96s86p series/parallel connection**. A single cell is characterized by a **C-NMC chemistry** (anode material: Carbon,  cathode material: Nickel-Manganese-Cobalt) and it has a nominal capacity of 2.86 Ah and a nominal voltage of 4.2 V, resulting in a total capacity of 246 Ah and total energy of 100 kWh. This type of battery allows TeslaS to achieve **a driving range of ~600 km** before recharging the battery.
@@ -79,7 +79,7 @@ NissanLeaf_input_data.m
 
 for Nissan Leaf.
 
-### 2.3 Driving Cycle
+### 2.3 Driving Cycles
 
 The input to the EV model is a driving cycle, which an applied speed profile over time. Practically speaking, we are forcing our EV to drive with our applied speed profile defined by the driving cycle. A driving cycle is available from public agencies such as the **Environmental Protection Agency (EPA)**, which perform tests to evaluate for example the emissions of vehicles in different conditions (urban, extra-urba, highway, high speed, low speed  etc.). Please refer to the driving cycles EPA webpage: https://www.epa.gov/vehicle-and-fuel-emissions-testing/dynamometer-drive-schedules.
 
@@ -88,4 +88,6 @@ The folder **driving_cycles** contain subfolders corresponding to driving cycles
 ```yaml
 driving_cycle.m
 ```
+It should be noted that the driving cycle in the txt files should be applied with repetition to the EV model, because a single cycle does not dishcarge the battery in full. For this reason, it is necessary to repeat the driving cycle for a sufficiently high number of repetitions. An option could be to set a number of repetitions corresponding to the driving range of the EV. In this case, the number of repetition is simply the driving range divided by the distance covered by a single cycle. 
 
+The number of repetitions is set by the parameter **n_repeat**. It should be noted that a high number of repetition results in a longer time to complete the simulation, so if you just want to test the model, you can set this parameter to 1. Off course a single cycle corresponds to a tiny discharge of the battery, ~2%.
