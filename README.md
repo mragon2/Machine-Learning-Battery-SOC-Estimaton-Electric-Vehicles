@@ -94,6 +94,9 @@ The number of repetitions is set by the parameter **n_repeat**. It should be not
 
 ### 2.4 EV model
 
+
+![plot](./EV_model.tif)
+
 The EV Simulink model is implemented in the file *EV_model.slx*. You just need to open it by clicking on it and then press the green button in the upper taksbar. During the simulation you can open the scopes to visualize the time series variations of different variables such as the SOC, the voltage, the current, the electric motor power etc.
 
 ### 2.5 Save the results
